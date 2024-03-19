@@ -1,0 +1,30 @@
+{
+    "host":{
+        "name": "Barcelona",
+        "image": "/barcelona.png",
+        "statistic":{
+            "goals": [],
+            "possesion": 50,
+            "shots":0,
+            "corners":0,
+            "offsides":0,
+            "fouls":0,
+            "yellowCards":0,
+            "redCards":0
+        }
+    },
+    "guest":{
+        "name": "Real Madrid",
+        "image": "/real-madrid.png",
+        "statistic":{
+            "goals": [],
+            "possesion": 50,
+            "shots":0,
+            "corners":0,
+            "offsides":0,
+            "fouls":0,
+            "yellowCards":0,
+            "redCards":0
+        }
+    }
+}

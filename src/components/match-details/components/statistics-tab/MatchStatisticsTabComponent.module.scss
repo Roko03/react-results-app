@@ -1,0 +1,9 @@
+@import "../../../../styles/main.scss";
+
+.match_statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(24);
+}

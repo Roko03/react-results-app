@@ -1,0 +1,63 @@
+@import "../../../../../../styles/main.scss";
+
+.match_statistics_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: rem(12);
+
+  &__values {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__team {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      gap: rem(8);
+
+      button {
+        border: 1px solid #101010;
+        border-radius: rem(4);
+        outline: none;
+        background-color: transparent;
+        font-size: rem(18);
+        width: rem(30);
+        height: rem(30);
+        cursor: pointer;
+      }
+    }
+
+    &__guest {
+      justify-content: flex-end;
+    }
+  }
+
+  .progress_bar {
+    align-self: baseline;
+    width: 100%;
+    height: rem(36);
+    position: relative;
+    border-radius: rem(16);
+    overflow: hidden;
+    border: 2px solid #000;
+
+    &__line {
+      position: absolute;
+      height: 100%;
+      inset: 0;
+      background-color: #000;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+    }
+  }
+}
