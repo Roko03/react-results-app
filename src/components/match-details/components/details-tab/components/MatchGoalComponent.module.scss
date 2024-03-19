@@ -1,0 +1,24 @@
+@import "../../../../../styles/main.scss";
+
+.goal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: rem(8);
+  font-size: rem(18);
+
+  &__line {
+    height: rem(32);
+    width: rem(2);
+    background-color: rgba(#000, 0.2);
+  }
+}
+
+.guest_goal {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.host_goal {
+  align-self: flex-start;
+}

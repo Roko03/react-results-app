@@ -1,0 +1,45 @@
+@import "../../../../styles/main.scss";
+
+.match_info_team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(120);
+    height: rem(120);
+    border: 1px solid #101010;
+    border-radius: rem(10);
+
+    img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(16);
+
+    button {
+      border: 1px solid #101010;
+      border-radius: rem(4);
+      outline: none;
+      background-color: transparent;
+      font-size: rem(18);
+      width: rem(30);
+      height: rem(30);
+      cursor: pointer;
+    }
+  }
+}
