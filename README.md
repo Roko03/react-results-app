@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# React Results App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://github.com/Roko03/oop-vjezba/assets/72657685/a96ce195-34b4-4fd4-84a0-34262f1fcd3f
 
-Currently, two official plugins are available:
+Simple and responsive football match result app with match detail and statistics built using React and TypeScript. It includes one page with two tabs. On the detail tab, you can see match details like goals, and minutes. On the statistic tab, you can see the whole statistics of the game like yellow cards, shoots on target, and possession.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Quick Start
 
-## Expanding the ESLint configuration
+Make sure you have the following installed on your computer:
+- [git](https://git-scm.com/)
+- [node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Clone the repository
+```bash
+git clone https://github.com/Roko03/react-results-app.git
+cd react-results-app
+```
+Installation
+```bash
+npm i 
+#or
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Running the Project
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the project
+
+## Summary
+For this project, I utilized a React template that I created, incorporating a well-organized SCSS structure where each component has its folder.
+
+**Design and Styling**
+
+Firstly, I defined style, including typography, colors, and fonts. Each component is styled using a dedicated SCSS file with CSS modules for better folder structure.
+
+**TypeScript Integration**
+
+I created TypeScript types for the data used in the components.
+
+**Challenges and Solutions**
+
+One of the most challenging aspects of this project was designing objects for teams and implementing functions to set statistics and game results. I am very proud of a function I designed, where you just need to invoke four arguments:
+- **Functionality** - what function will do(addition or removal)
+- **Team** - the team for which the functionality will be applied
+- **TeamName** - name of the team
+- **Variant** - which object value will be affected
+
+## Time Spent
+I need 15-20 hours of work to make this project. 
+
+## Project Structure
+- **Folders and Files:** The project follows modular structure for folder with components, pages and utilities
+- **Technologies Used:** React.js, SCSS, TypeScript
+- **Considerations:** The main focus is on creating clean and reusable components, understanding what types of data will be displayed, and how to organize the project
+
+## Live demo
+
+You can view the live demo of the project [here](https://react-result-app.netlify.app/).
